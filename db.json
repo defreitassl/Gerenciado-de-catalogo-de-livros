@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "id": "929a",
+      "title": "O Hipnotista",
+      "author": "Lars Kepler",
+      "gender": "Suspense",
+      "publicationYear": "2003",
+      "evaluation": 2
+    },
+    {
+      "id": "a0d6",
+      "title": "O Mar de Monstros",
+      "author": "Rick Riordan",
+      "gender": "Aventura",
+      "publicationYear": "2008",
+      "evaluation": 4
+    },
+    {
+      "id": "c4b5",
+      "title": "A Moreninha",
+      "author": "Vila da Serra",
+      "gender": "Drama",
+      "publicationYear": "1994",
+      "evaluation": 4
+    },
+    {
+      "id": "149d",
+      "title": "Aprendiz de Detetive",
+      "author": "Gislaine Silva",
+      "gender": "Suspense",
+      "publicationYear": "2016",
+      "evaluation": 3
+    },
+    {
+      "id": "55bd",
+      "title": "gyfghfghfgh",
+      "author": "gighgi",
+      "gender": "Histórico",
+      "publicationYear": "4545",
+      "evaluation": 0
+    }
+  ]
+}

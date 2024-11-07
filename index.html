@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="./static/scripts/script.js" type="module" defer></script>
+    <title>Catálogo de livros</title>
+</head>
+<body>
+
+    <div class="container-fluid h-100 d-flex flex-column align-items-center justify-content-center bg-primary-subtle p-4">
+
+        <div class="row w-100 p-3">
+            <div class="col-4">
+                <h1 class="text-primary">Catálogo de Livros</h1>
+            </div>
+            <div class="col-5">
+                <form class="d-flex pt-1" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" id="searchBooksInput" aria-label="Search">
+                    <button class="btn btn-outline-primary" id="searchBooks" type="submit">Search</button>
+                </form>
+            </div>
+            
+        </div>
+
+        <div id="consultContent" class="table-div w-100 h-100 bg-secondary-subtle p-4 rounded-5 shadow-lg">
+            
+            <div class="table-container">
+                <table class="table table-secondary table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Gênero</th>
+                            <th>Ano</th>
+                            <th>Avaliação</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Aqui será exibido os livros -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="input-group w-50">
+                <button id="switchRegisterButton" class="btn btn-primary me-3">Cadastrar Livro</button>
+                <select class="form-select me-2" id="genderFilter">
+                    <option selected disabled>Filtre por gênero</option>
+                    <option value="none">Nenhum</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Biografia">Biografia</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Ficção Científica">Ficção Científica</option>
+                    <option value="Histórico">Histórico</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Terror">Terror</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div id="registerContent" class="row h-100 w-50 bg-secondary-subtle p-4 rounded-5 shadow-lg mb-4 d-none">
+            <div class="col d-flex flex-column justify-content-center">
+                <h2 class="mb-4 text-start text-primary">Cadastrar novo livro no catálogo</h2>
+    
+                <form class="d-flex flex-column">
+    
+                    <div class="mb-3">
+                        <label for="bookTitle" class="form-label">Título do Livro:</label>
+                        <input type="text" name="title" id="title" class="form-control" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="author" class="form-label">Autor:</label>
+                        <input type="text" name="author" id="author" class="form-control" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="bookGender" class="form-label">Gênero:</label>
+                        <select name="gender" id="gender" class="form-select" required>
+                            <option selected disabled>Selecione o gênero do livro...</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Biografia">Biografia</option>
+                            <option value="Comédia">Comédia</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Fantasia">Fantasia</option>
+                            <option value="Ficção Científica">Ficção Científica</option>
+                            <option value="Histórico">Histórico</option>
+                            <option value="Suspense">Suspense</option>
+                            <option value="Terror">Terror</option>
+                        </select>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="bookYear" class="form-label">Ano de publicação:</label>
+                        <input type="text" name="publicationYear" id="bookYear" class="form-control" required>
+                    </div>
+    
+                    <button id="submitButton" class="btn btn-primary">Cadastrar Livro</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="evaluateContent" class="row h-100 w-50 d-flex flex-column justify-content-center d-none">
+            <form action="" class="h-50 bg-secondary-subtle p-4 rounded-5 shadow-lg mb-4 text-center">
+                <label for="evaluationNote" class="form-label">Sua nota de avaliação do livro</label>
+                <input type='number' id="evaluationNote" max="5" class="form-control mb-3">
+                <button class="btn btn-primary" id="submitEvaluation">Avaliar</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

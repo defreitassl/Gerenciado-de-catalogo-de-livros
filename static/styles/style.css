@@ -1,0 +1,18 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.table-div {
+    max-height: 80vh;
+}
+
+.table-container {
+    max-height: 90%; 
+    overflow-y: auto; 
+    width: 100%; 
+    margin-bottom: 1rem;
+}

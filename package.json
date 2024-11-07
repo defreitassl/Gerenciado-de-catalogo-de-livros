@@ -1,0 +1,13 @@
+{
+  "name": "projeto_douglas_freitas",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "test": "node script.js"
+  },
+  "keywords": [],
+  "author": "Douglas",
+  "license": "ISC",
+  "description": ""
+}
